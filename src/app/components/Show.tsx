@@ -12,7 +12,7 @@ function Show() {
     return (
       <div>
         <ul>
-          {lineItems.filter(f => {
+          {lineItems.filter((f: any) => {
             return f;
           }).map((item: any) => <LineItem key={item.id} item={item} />
           )}
