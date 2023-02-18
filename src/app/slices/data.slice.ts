@@ -17,12 +17,20 @@ export const counterSlice = createSlice({
         ...state.queryHeaders,
         [action.payload.which]: action.payload.value
       }
+    },
+    updateSelectedMonth: (state: any, action: any) => {
+      console.log({ action })
+      state.selectedMonth = action.payload.value
     }
 
   },
 })
 
 // Action creators are generated for each case reducer function
-export const { addData, addHeaderOptions, updateQueryHeaders } = counterSlice.actions
+export const {
+  addData,
+  addHeaderOptions,
+  updateQueryHeaders,
+  updateSelectedMonth } = counterSlice.actions
 
 export default counterSlice.reducer
