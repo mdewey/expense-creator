@@ -8,19 +8,19 @@ const ITEM_TYPES = {
   },
   UTILITY: {
     type: "UTILITY",
-    options: []
+    options: ["PEOPLES GAS", "WASTE MGMT", "COMCAST", "WEST VIEW WATER", "JORDANTAX", "DUQUESNE LIGHT"]
   },
   SUBSCRIPTION: {
     type: "SUBSCRIPTION",
-    options: ["NETFLIX"]
+    options: ["NETFLIX", "ARLO", "Spotify"]
   },
   HOBBY: {
     type: "HOBBY",
-    options: []
+    options: ["IRON CITY"]
   },
   HOUSE: {
     type: "HOUSE",
-    options: []
+    options: ["HOMEDEPOT", "HOME DEPOT", "LOWES", "LOWE'S"]
   },
   CAR: {
     type: "CAR",
@@ -40,22 +40,22 @@ const ITEM_TYPES = {
   },
   FEES: {
     type: "FEES",
-    options: []
+    options: ["TRANSACTION LIMIT FEE"]
   },
   OTHER: {
     type: "OTHER",
     options: []
   },
   EATING_OUT: {
-    type: "EATING_OUT",
-    options: []
+    type: "EATING OUT",
+    options: ["MANDYS", "THAI RED CURRY", "BURGATORY", "DOCE TAQUERIA", "PANERA", "KFC", "SUSHI TOMO"]
   },
   PETS: {
     type: "PETS",
     options: []
   },
   BLOW_MONEY: {
-    type: "BLOW_MONEY",
+    type: "BLOW MONEY",
     options: []
   },
   DATE: {
@@ -71,7 +71,7 @@ const ITEM_TYPES = {
     options: []
   },
   PERSONAL_UPKEEP: {
-    type: "PERSONAL_UPKEEP",
+    type: "PERSONAL UPKEEP",
     options: []
   },
   SAVINGS: {
@@ -84,7 +84,7 @@ const ITEM_TYPES = {
   },
   COFFEE: {
     type: "COFFEE",
-    options: []
+    options: ["ANCHOR & ANVIL"]
   },
   CASH: {
     type: "CASH",
