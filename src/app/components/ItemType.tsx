@@ -48,7 +48,17 @@ const ITEM_TYPES = {
   },
   EATING_OUT: {
     type: "EATING OUT",
-    options: ["MANDYS", "THAI RED CURRY", "BURGATORY", "DOCE TAQUERIA", "PANERA", "KFC", "SUSHI TOMO"]
+    options: [
+      "PIADA",
+      "CONDADO",
+      "SESAME INN",
+      "MANDYS",
+      "THAI RED CURRY",
+      "BURGATORY",
+      "DOCE TAQUERIA",
+      "PANERA",
+      "KFC",
+      "SUSHI TOMO"]
   },
   PETS: {
     type: "PETS",
@@ -83,8 +93,8 @@ const ITEM_TYPES = {
     options: []
   },
   COFFEE: {
-    type: "COFFEE",
-    options: ["ANCHOR & ANVIL"]
+    type: "COFFEE DATE",
+    options: ["ANCHOR & ANVIL", "CAFE CONMIGO", "CONVIVE", "STARBUCKS"]
   },
   CASH: {
     type: "CASH",
