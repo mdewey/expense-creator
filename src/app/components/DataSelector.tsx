@@ -27,7 +27,6 @@ const DataSelector = () => {
     dispatch(updateQueryHeaders({ which, value: event.target.value } as any));
   }
   const updateMonth = (which: string) => {
-    console.log("here", which)
     dispatch(updateSelectedMonth({ value: which } as any));
   }
   const months = [

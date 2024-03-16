@@ -1,6 +1,5 @@
 import React from 'react';
 
-
 const ITEM_TYPES = {
   FOOD: {
     type: "FOOD",
@@ -110,24 +109,26 @@ const ITEM_TYPES = {
   }
 }
 
-function ItemType(props) {
-  const { description } = props;
-  if (!description) {
-    return <></>
-  }
+const getType = (description: string) => {
   let type = "";
-  const test = Object.keys(ITEM_TYPES).some((key) => {
+  Object.keys(ITEM_TYPES).some((key) => {
     return ITEM_TYPES[key].options.some((option: string) => {
       const rv = description.includes(option);
-      console.log({ option, description, rv })
       if (rv) {
         type = key;
       }
       return rv;
     });
   });
-  // const test = 
-  console.log({ test, type })
+  return type;
+}
+
+function ItemType(props: any) {
+  const { description } = props;
+  if (!description) {
+    return <></>
+  }
+  const type = getType(description);
   if (type) {
     return (
       <>
@@ -143,3 +144,4 @@ function ItemType(props) {
 }
 
 export default ItemType;
+export { getType };

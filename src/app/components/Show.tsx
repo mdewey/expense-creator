@@ -3,6 +3,7 @@ import { useSelector } from 'react-redux';
 import getMonth from 'date-fns/getMonth'
 
 import LineItem from './LineItem';
+import CopyToClipboard from './CopyButton';
 
 const convertMonth = (month: string): number => {
   switch (month) {
@@ -37,25 +38,29 @@ const convertMonth = (month: string): number => {
 
 function Show() {
   const { lineItems, queryHeaders, selectedMonth: month } = useSelector((state: any) => state.data);
+  if (lineItems.length === 0) {
+    return <div>
+      <h1>No items to show</h1>
+    </div>
+  }
   if (!queryHeaders) {
     return <div>
       <h1>Missing column Headers</h1>;
     </div>
-  } else {
-    return (
-      <div>
-        <h2>showing items for {month}</h2>
-        <ul>
-          {lineItems.filter((f: any) => {
-            console.log(getMonth(new Date(f[queryHeaders.date])))
-            return getMonth(new Date(f[queryHeaders.date])) === convertMonth(month);
-          }).map((item: any) => <LineItem key={item.id} item={item} />
-          )}
-        </ul>
-      </div>
-    );
-
   }
+  const filteredLineItems = lineItems.filter((f: any) => {
+    return getMonth(new Date(f[queryHeaders.date])) === convertMonth(month);
+  })
+
+  return (
+    <div>
+      <h2>showing items for {month}</h2>
+      <CopyToClipboard filteredLineItems={filteredLineItems} />
+      <ul>
+        {filteredLineItems.map((item: any) => <LineItem key={item.id} item={item} />)}
+      </ul>
+    </div>
+  );
 }
 
 export default Show;

@@ -19,7 +19,6 @@ export const counterSlice = createSlice({
       }
     },
     updateSelectedMonth: (state: any, action: any) => {
-      console.log({ action })
       state.selectedMonth = action.payload.value
     }
 
