@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useMemo, useState } from 'react';
 import { useSelector } from 'react-redux';
 import getMonth from 'date-fns/getMonth'
 
@@ -37,25 +37,39 @@ const convertMonth = (month: string): number => {
   }
 }
 
+interface CopyItems {
+  items: string;
+  count: number;
+}
+
 function CopyToClipboard(props: any) {
 
   const { queryHeaders } = useSelector((state: any) => state.data);
 
   const { filteredLineItems } = props;
 
+  const copiedItemsBucket: CopyItems = useMemo(() => {
+
+    let count = 0;
+    const items: string = filteredLineItems.reduce((acc: string, item: string) => {
+      if (item[queryHeaders.amount]) {
+        count++;
+        return acc +
+          `${item[queryHeaders.date]},${item[queryHeaders.description].replace(",", "")},${item[queryHeaders.amount].replace(",", "").replace("$", "")},${getTypeDescription(getType(item[queryHeaders.description]))},${queryHeaders.source ?? ""}\n`;
+      } else {
+        return acc;
+      }
+    }, '')
+    return { items, count };
+  },
+    [filteredLineItems, queryHeaders]);
+
 
   const copyToClipboard = async () => {
     try {
-      const copy = filteredLineItems.reduce((acc: string, item: string) => {
-        if (item[queryHeaders.amount]) {
-          return acc +
-            `${item[queryHeaders.date]},${item[queryHeaders.description].replace(",", "")},${item[queryHeaders.amount].replace(",", "").replace("$", "")},${getTypeDescription(getType(item[queryHeaders.description]))},${queryHeaders.source ?? ""}\n`;
-        } else {
-          return acc;
-        }
-      }, '');
+      const copy = copiedItemsBucket.items;
       await navigator.clipboard.writeText(copy);
-      alert('Lines copied:' + filteredLineItems.length);
+      alert('Actually Lines copied:' + copiedItemsBucket.count);
     } catch (error) {
       alert('Error copying to clipboard:' + error);
     }
@@ -63,7 +77,7 @@ function CopyToClipboard(props: any) {
 
   return (
     <button onClick={copyToClipboard}>
-      Copy {filteredLineItems.length} to Clipboard
+      Copy roughly {copiedItemsBucket.count} to Clipboard
     </button>
   )
 }
