@@ -47,8 +47,12 @@ function CopyToClipboard(props: any) {
   const copyToClipboard = async () => {
     try {
       const copy = filteredLineItems.reduce((acc: string, item: string) => {
-        return acc +
-          `${item[queryHeaders.date]},${item[queryHeaders.description].replace(",", "")},${item[queryHeaders.amount].replace(",", "").replace("$", "")},${getTypeDescription(getType(item[queryHeaders.description]))},${queryHeaders.source ?? ""}\n`;
+        if (item[queryHeaders.amount]) {
+          return acc +
+            `${item[queryHeaders.date]},${item[queryHeaders.description].replace(",", "")},${item[queryHeaders.amount].replace(",", "").replace("$", "")},${getTypeDescription(getType(item[queryHeaders.description]))},${queryHeaders.source ?? ""}\n`;
+        } else {
+          return acc;
+        }
       }, '');
       await navigator.clipboard.writeText(copy);
       alert('Lines copied:' + filteredLineItems.length);
