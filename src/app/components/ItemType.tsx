@@ -99,7 +99,7 @@ const ITEM_TYPES: ItemType = {
     options: []
   },
   COFFEE: {
-    type: "COFFEE DATE",
+    type: "COFFEE DATEs",
     options: ["ANCHOR & ANVIL", "CAFE CONMIGO", "CONVIVE", "STARBUCKS"]
   },
   CASH: {
