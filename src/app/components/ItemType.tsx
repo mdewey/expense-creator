@@ -123,6 +123,10 @@ const getType = (description: string) => {
   return type;
 }
 
+const getTypeDescription = (type: string) => {
+  return ITEM_TYPES[type] ? ITEM_TYPES[type].type : "CHANGE ME";
+}
+
 function ItemType(props: any) {
   const { description } = props;
   if (!description) {
@@ -144,4 +148,4 @@ function ItemType(props: any) {
 }
 
 export default ItemType;
-export { getType };
+export { getType, getTypeDescription };

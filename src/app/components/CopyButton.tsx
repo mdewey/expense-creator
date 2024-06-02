@@ -4,7 +4,7 @@ import getMonth from 'date-fns/getMonth'
 
 import LineItem from './LineItem';
 
-import { getType } from './ItemType';
+import { getType, getTypeDescription } from './ItemType';
 
 const convertMonth = (month: string): number => {
   switch (month) {
@@ -48,7 +48,7 @@ function CopyToClipboard(props: any) {
     try {
       const copy = filteredLineItems.reduce((acc: string, item: string) => {
         return acc +
-          `${item[queryHeaders.date]},${item[queryHeaders.description].replace(",", "")},${item[queryHeaders.amount].replace(",", "").replace("$", "")},${getType(item[queryHeaders.description])},${queryHeaders.source ?? ""}\n`;
+          `${item[queryHeaders.date]},${item[queryHeaders.description].replace(",", "")},${item[queryHeaders.amount].replace(",", "").replace("$", "")},${getTypeDescription(getType(item[queryHeaders.description]))},${queryHeaders.source ?? ""}\n`;
       }, '');
       await navigator.clipboard.writeText(copy);
       alert('Lines copied:' + filteredLineItems.length);
@@ -59,7 +59,7 @@ function CopyToClipboard(props: any) {
 
   return (
     <button onClick={copyToClipboard}>
-      Copy to Clipboard
+      Copy {filteredLineItems.length} to Clipboard
     </button>
   )
 }

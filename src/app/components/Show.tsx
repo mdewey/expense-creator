@@ -56,6 +56,7 @@ function Show() {
     <div>
       <h2>showing items for {month}</h2>
       <CopyToClipboard filteredLineItems={filteredLineItems} />
+
       <ul>
         {filteredLineItems.map((item: any) => <LineItem key={item.id} item={item} />)}
       </ul>
