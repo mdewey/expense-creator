@@ -1,6 +1,13 @@
 import React from 'react';
 
-const ITEM_TYPES = {
+type ItemType = {
+  [key: string]: {
+    type: string;
+    options: string[];
+  };
+};
+
+const ITEM_TYPES: ItemType = {
   FOOD: {
     type: "FOOD",
     options: ["GIANT-EAGLE", "WHOLEFDS"]
