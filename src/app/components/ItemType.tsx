@@ -10,15 +10,33 @@ type ItemType = {
 const ITEM_TYPES: ItemType = {
   FOOD: {
     type: "FOOD",
-    options: ["GIANT-EAGLE", "WHOLEFDS"]
+    options: [
+      "GIANT-EAGLE",
+      "WHOLEFDS",
+      "ALDI"
+    ]
   },
   UTILITY: {
     type: "UTILITY",
-    options: ["PEOPLES GAS", "WASTE MGMT", "COMCAST", "WEST VIEW WATER", "JORDANTAX", "DUQUESNE LIGHT"]
+    options: [
+      "PEOPLES GAS",
+      "WM.COM",
+      "COMCAST",
+      "WEST VIEW WATER",
+      "JORDANTAX",
+      "DUQUESNE LIGHT"]
   },
   SUBSCRIPTION: {
     type: "SUBSCRIPTION",
-    options: ["NETFLIX", "ARLO", "Spotify"]
+    options: [
+      "NETFLIX",
+      "ARLO",
+      "Spotify",
+      "CROOKED",
+      "HELP.MAX.COM",
+      "FORGE",
+      "ZOOM",
+      "GOOGLE *YouTubePremium"]
   },
   HOBBY: {
     type: "HOBBY",
@@ -30,7 +48,7 @@ const ITEM_TYPES: ItemType = {
   },
   CAR: {
     type: "CAR",
-    options: []
+    options: ["JIM SHORKEY"]
   },
   GIFT: {
     type: "GIFT",
@@ -55,24 +73,31 @@ const ITEM_TYPES: ItemType = {
   EATING_OUT: {
     type: "EATING OUT",
     options: [
-      "PIADA",
-      "CONDADO",
-      "SESAME INN",
-      "MANDYS",
-      "THAI RED CURRY",
       "BURGATORY",
+      "CONDADO",
       "DOCE TAQUERIA",
-      "PANERA",
+      "HAL",
+      "KAWAI",
       "KFC",
-      "SUSHI TOMO"]
+      "MANDYS",
+      "NANBAN",
+      "PANERA",
+      "PIADA",
+      "RAMEN KING",
+      "REDORCHID",
+      "SESAME INN",
+      "SUSHI TOMO",
+      "THAI RED CURRY",
+      "WHEELFISH",
+    ]
   },
   PETS: {
     type: "PETS",
-    options: []
+    options: ["NORTH BOROS"]
   },
   BLOW_MONEY: {
     type: "BLOW MONEY",
-    options: []
+    options: ["MR SMALLS", "THUNDERBIRD"]
   },
   DATE: {
     type: "DATE",
@@ -99,8 +124,14 @@ const ITEM_TYPES: ItemType = {
     options: []
   },
   COFFEE: {
-    type: "COFFEE DATEs",
-    options: ["ANCHOR & ANVIL", "CAFE CONMIGO", "CONVIVE", "STARBUCKS"]
+    type: "COFFEE DATES",
+    options: [
+      "ANCHOR & ANVIL",
+      "CAFE CONMIGO",
+      "CONVIVE",
+      "STARBUCKS",
+      "KOALA COFFEE",
+      "BUTTERWOOD"]
   },
   CASH: {
     type: "CASH",
@@ -113,6 +144,11 @@ const ITEM_TYPES: ItemType = {
   VACATION: {
     type: "VACATION",
     options: []
+  },
+  MORTGAGE:
+  {
+    type: "MORTGAGE",
+    options: ["ONLINE PAYMENT TO                XXXXX4268"]
   }
 }
 

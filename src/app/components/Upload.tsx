@@ -18,17 +18,20 @@ function Upload() {
     });
   };
   return (
-    <div>
-      {/* File Uploader */}
-      <input
-        type="file"
-        name="file"
-        accept=".csv"
-        style={{ display: "block", margin: "10px auto" }}
-        onChange={changeHandler}
-      />
-      <DataSelector />
-    </div>
+    <>
+      <div className="file-uploader">
+        {/* File Uploader */}
+        <input
+          type="file"
+          name="file"
+          accept=".csv"
+          onChange={changeHandler}
+        />
+      </div>
+      <div>
+        <DataSelector />
+      </div>
+    </>
   );
 }
 

@@ -44,7 +44,7 @@ const DataSelector = () => {
     "December"
   ];
   return (
-    <div>
+    <div className='selector-containers'>
       <div>
         <label htmlFor="type">month</label>
         {dropDown(months, (event: any) => updateMonth(event.target.value))}
