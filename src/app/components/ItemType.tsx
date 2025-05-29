@@ -30,7 +30,7 @@ const ITEM_TYPES: ItemType = {
     type: "SUBSCRIPTION",
     options: [
       "NETFLIX",
-      "ARLO",
+      "ARLO TECH",
       "Spotify",
       "CROOKED",
       "HELP.MAX.COM",
@@ -77,18 +77,20 @@ const ITEM_TYPES: ItemType = {
       "CONDADO",
       "DOCE TAQUERIA",
       "HAL",
-      "KAWAI",
+      "KAWA",
       "KFC",
       "MANDYS",
       "NANBAN",
       "PANERA",
       "PIADA",
+      "DIM SUM",
       "RAMEN KING",
       "REDORCHID",
       "SESAME INN",
       "SUSHI TOMO",
       "THAI RED CURRY",
       "WHEELFISH",
+      "DIBELLAS"
     ]
   },
   PETS: {
