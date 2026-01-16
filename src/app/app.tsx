@@ -9,8 +9,10 @@ export function App() {
 
   return (
     <Provider store={store}>
-      <Upload />
-      <Show />
+      <div className="content-container">
+        <Upload />
+        <Show />
+      </div>
     </Provider>
   );
 }
