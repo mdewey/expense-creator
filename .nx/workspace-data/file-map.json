@@ -1,0 +1,171 @@
+{
+  "version": "6.0",
+  "nxVersion": "20.8.4",
+  "pathMappings": {},
+  "nxJsonPlugins": [],
+  "fileMap": {
+    "projectFileMap": {
+      "e2e": [
+        {
+          "file": "e2e/.eslintrc.json",
+          "hash": "3390671450681897564"
+        },
+        {
+          "file": "e2e/cypress.config.ts",
+          "hash": "3631011454240625899"
+        },
+        {
+          "file": "e2e/project.json",
+          "hash": "16810257249756054987"
+        },
+        {
+          "file": "e2e/src/e2e/app.cy.ts",
+          "hash": "14144182143198129706"
+        },
+        {
+          "file": "e2e/src/fixtures/example.json",
+          "hash": "11614668686582597233"
+        },
+        {
+          "file": "e2e/src/support/app.po.ts",
+          "hash": "11157016311132186162"
+        },
+        {
+          "file": "e2e/src/support/commands.ts",
+          "hash": "7314691991044890572"
+        },
+        {
+          "file": "e2e/src/support/e2e.ts",
+          "hash": "3666078656922506009"
+        },
+        {
+          "file": "e2e/tsconfig.json",
+          "hash": "11974834951735253613"
+        }
+      ],
+      "expense-creator": [
+        {
+          "file": ".eslintrc.json",
+          "hash": "14608220135512877924"
+        },
+        {
+          "file": ".gitignore",
+          "hash": "11608181557323256120"
+        },
+        {
+          "file": ".prettierignore",
+          "hash": "17733650430415207254"
+        },
+        {
+          "file": ".prettierrc",
+          "hash": "16267754514737964994"
+        },
+        {
+          "file": ".vscode/extensions.json",
+          "hash": "16884713733442577066"
+        },
+        {
+          "file": "README.md",
+          "hash": "5692554313822524902"
+        },
+        {
+          "file": "index.html",
+          "hash": "11275380855677733182"
+        },
+        {
+          "file": "nx.json",
+          "hash": "7033079104170698580"
+        },
+        {
+          "file": "package.json",
+          "hash": "4798451776758142702"
+        },
+        {
+          "file": "project.json",
+          "hash": "4048040340506687814"
+        },
+        {
+          "file": "public/favicon.ico",
+          "hash": "9303420814833116677"
+        },
+        {
+          "file": "src/app/app.module.scss",
+          "hash": "14507130133388590702"
+        },
+        {
+          "file": "src/app/app.spec.tsx",
+          "hash": "18004713536177529738"
+        },
+        {
+          "file": "src/app/app.tsx",
+          "hash": "2106977720094169390"
+        },
+        {
+          "file": "src/app/components/CopyButton.tsx",
+          "hash": "172982056993485973"
+        },
+        {
+          "file": "src/app/components/DataSelector.tsx",
+          "hash": "5211906573672858066"
+        },
+        {
+          "file": "src/app/components/ItemType.tsx",
+          "hash": "8711073765467002713"
+        },
+        {
+          "file": "src/app/components/LineItem.tsx",
+          "hash": "17271995551265309928"
+        },
+        {
+          "file": "src/app/components/Show.tsx",
+          "hash": "3047983546553465198"
+        },
+        {
+          "file": "src/app/components/Upload.tsx",
+          "hash": "14338402632744278268"
+        },
+        {
+          "file": "src/app/nx-welcome.tsx",
+          "hash": "6505761074598079456"
+        },
+        {
+          "file": "src/app/slices/data.slice.ts",
+          "hash": "5833678751557946006"
+        },
+        {
+          "file": "src/app/store.ts",
+          "hash": "2884983851026783777"
+        },
+        {
+          "file": "src/assets/.gitkeep",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "src/main.tsx",
+          "hash": "4731961929376199421"
+        },
+        {
+          "file": "src/styles.scss",
+          "hash": "4992758741195729898"
+        },
+        {
+          "file": "tsconfig.app.json",
+          "hash": "16553583270888621818"
+        },
+        {
+          "file": "tsconfig.json",
+          "hash": "2521423178378462286"
+        },
+        {
+          "file": "tsconfig.spec.json",
+          "hash": "9921801746886678590"
+        },
+        {
+          "file": "vite.config.ts",
+          "hash": "18272825559145644750"
+        }
+      ]
+    },
+    "nonProjectFiles": []
+  }
+}

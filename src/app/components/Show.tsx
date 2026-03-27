@@ -1,6 +1,6 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
-import getMonth from 'date-fns/getMonth'
+import { getMonth } from 'date-fns'
 
 import LineItem from './LineItem';
 import CopyToClipboard from './CopyButton';

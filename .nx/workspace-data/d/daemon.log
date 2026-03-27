@@ -1,0 +1,15 @@
+[NX v20.8.4 Daemon Server] - 2026-03-27T21:52:01.159Z - Started listening on: \\.\pipe\nx\C:\Users\markt\AppData\Local\Temp\f9b3ad827f3dcddad15b\d.sock
+[NX v20.8.4 Daemon Server] - 2026-03-27T21:52:01.165Z - [WATCHER]: Subscribed to changes within: C:\Users\markt\projects\budget-tools\expense-creator (native)
+[NX v20.8.4 Daemon Server] - 2026-03-27T21:52:01.170Z - Established a connection. Number of open connections: 1
+[NX v20.8.4 Daemon Server] - 2026-03-27T21:52:01.171Z - Established a connection. Number of open connections: 2
+[NX v20.8.4 Daemon Server] - 2026-03-27T21:52:01.173Z - Closed a connection. Number of open connections: 1
+[NX v20.8.4 Daemon Server] - 2026-03-27T21:52:01.175Z - [REQUEST]: Responding to the client. Shutdown initiated
+[NX v20.8.4 Daemon Server] - 2026-03-27T21:52:01.176Z - Done responding to the client Shutdown initiated
+[NX v20.8.4 Daemon Server] - 2026-03-27T21:52:01.176Z - Handled FORCE_SHUTDOWN. Handling time: 0. Response time: 2.
+[NX v20.8.4 Daemon Server] - 2026-03-27T21:52:01.177Z - Closed a connection. Number of open connections: 0
+[NX v20.8.4 Daemon Server] - 2026-03-27T21:52:01.177Z - [WATCHER]: Stopping the watcher for C:\Users\markt\projects\budget-tools\expense-creator (sources)
+[NX v20.8.4 Daemon Server] - 2026-03-27T21:52:01.178Z - [WATCHER]: Stopping the watcher for C:\Users\markt\projects\budget-tools\expense-creator (outputs)
+[NX v20.8.4 Daemon Server] - 2026-03-27T21:52:01.178Z - Server stopped because: "Request to shutdown"
+
+> NX runtime error err=cannot send event from fs watcher: sending into a closed channel
+

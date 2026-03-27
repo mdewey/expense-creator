@@ -1,20 +1,6 @@
 {
   "$schema": "./node_modules/nx/schemas/nx-schema.json",
-  "npmScope": "expense-creator",
-  "tasksRunnerOptions": {
-    "default": {
-      "runner": "@nrwl/nx-cloud",
-      "options": {
-        "cacheableOperations": [
-          "build",
-          "lint",
-          "test",
-          "e2e"
-        ],
-        "accessToken": "ZjY2NzJiZTMtZjhhMy00MWFmLWI3ZWQtN2VkMDBmMTZiNDU0fHJlYWQtd3JpdGU="
-      }
-    }
-  },
+  "nxCloudAccessToken": "ZjY2NzJiZTMtZjhhMy00MWFmLWI3ZWQtN2VkMDBmMTZiNDU0fHJlYWQtd3JpdGU=",
   "targetDefaults": {
     "build": {
       "dependsOn": [
@@ -23,25 +9,29 @@
       "inputs": [
         "production",
         "^production"
-      ]
+      ],
+      "cache": true
     },
     "e2e": {
       "inputs": [
         "default",
         "^production"
-      ]
+      ],
+      "cache": true
     },
     "test": {
       "inputs": [
         "default",
         "^production"
-      ]
+      ],
+      "cache": true
     },
     "lint": {
       "inputs": [
         "default",
         "{workspaceRoot}/.eslintrc.json"
-      ]
+      ],
+      "cache": true
     }
   },
   "namedInputs": {
@@ -58,12 +48,11 @@
     "sharedGlobals": []
   },
   "generators": {
-    "@nrwl/react": {
+    "@nx/react": {
       "application": {
         "style": "scss",
         "linter": "eslint",
-        "bundler": "vite",
-        "babel": true
+        "bundler": "vite"
       },
       "component": {
         "style": "scss"
