@@ -43,3 +43,14 @@
 [NX v20.8.4 Daemon Server] - 2026-03-27T21:57:47.333Z - Done responding to the client handleGetEstimatedTaskTimings
 [NX v20.8.4 Daemon Server] - 2026-03-27T21:57:47.333Z - Handled GET_ESTIMATED_TASK_TIMINGS. Handling time: 23. Response time: 1.
 [NX v20.8.4 Daemon Server] - 2026-03-27T22:06:08.411Z - Closed a connection. Number of open connections: 0
+[NX v20.8.4 Daemon Server] - 2026-03-27T22:06:23.529Z - [WATCHER]: Processing file changes in outputs
+[NX v20.8.4 Daemon Server] - 2026-03-27T22:06:23.530Z - [WATCHER]: src/app/components/ItemType.tsx was modified
+[NX v20.8.4 Daemon Server] - 2026-03-27T22:06:23.643Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v20.8.4 Daemon Server] - 2026-03-27T22:06:23.643Z - [REQUEST]: src/app/components/ItemType.tsx
+[NX v20.8.4 Daemon Server] - 2026-03-27T22:06:23.643Z - [REQUEST]: 
+[NX v20.8.4 Daemon Server] - 2026-03-27T22:06:23.647Z - Time taken for 'hash changed files from watcher' 0.26329999999143183ms
+[NX v20.8.4 Daemon Server] - 2026-03-27T22:06:23.667Z - Time taken for 'build-project-configs' 17.206100000010338ms
+[NX v20.8.4 Daemon Server] - 2026-03-27T22:06:23.706Z - [SYNC]: collect registered sync generators
+[NX v20.8.4 Daemon Server] - 2026-03-27T22:06:23.707Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX v20.8.4 Daemon Server] - 2026-03-27T22:06:23.707Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX v20.8.4 Daemon Server] - 2026-03-27T22:06:23.707Z - Time taken for 'total execution time for createProjectGraph()' 29.339600000006612ms
