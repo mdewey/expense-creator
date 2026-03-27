@@ -7,7 +7,10 @@ export const counterSlice = createSlice({
   },
   reducers: {
     addData: (state: any, action: any) => {
-      state.lineItems = [...action.payload]
+      state.lineItems = [...state.lineItems, ...action.payload]
+    },
+    clearData: (state: any) => {
+      state.lineItems = []
     },
     addHeaderOptions: (state: any, action: any) => {
       state.headerOptions = action.payload
@@ -28,6 +31,7 @@ export const counterSlice = createSlice({
 // Action creators are generated for each case reducer function
 export const {
   addData,
+  clearData,
   addHeaderOptions,
   updateQueryHeaders,
   updateSelectedMonth } = counterSlice.actions

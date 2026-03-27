@@ -13,3 +13,33 @@
 
 > NX runtime error err=cannot send event from fs watcher: sending into a closed channel
 
+[NX v20.8.4 Daemon Server] - 2026-03-27T21:57:45.312Z - Started listening on: \\.\pipe\nx\C:\Users\markt\AppData\Local\Temp\f9b3ad827f3dcddad15b\d.sock
+[NX v20.8.4 Daemon Server] - 2026-03-27T21:57:45.341Z - [WATCHER]: Subscribed to changes within: C:\Users\markt\projects\budget-tools\expense-creator (native)
+[NX v20.8.4 Daemon Server] - 2026-03-27T21:57:45.345Z - Established a connection. Number of open connections: 1
+[NX v20.8.4 Daemon Server] - 2026-03-27T21:57:45.346Z - Established a connection. Number of open connections: 2
+[NX v20.8.4 Daemon Server] - 2026-03-27T21:57:45.349Z - Closed a connection. Number of open connections: 1
+[NX v20.8.4 Daemon Server] - 2026-03-27T21:57:45.352Z - [REQUEST]: Client Request for Project Graph Received
+[NX v20.8.4 Daemon Server] - 2026-03-27T21:57:45.410Z - Time taken for 'loadSpecifiedNxPlugins' 3.3363999999999123ms
+[NX v20.8.4 Daemon Server] - 2026-03-27T21:57:45.754Z - Time taken for 'Load Nx Plugin: C:\Users\markt\projects\budget-tools\expense-creator\node_modules\nx\src\plugins\project-json\build-nodes\project-json' 397.0775ms
+[NX v20.8.4 Daemon Server] - 2026-03-27T21:57:45.767Z - Time taken for 'Load Nx Plugin: C:\Users\markt\projects\budget-tools\expense-creator\node_modules\nx\src\plugins\package-json' 411.5103999999999ms
+[NX v20.8.4 Daemon Server] - 2026-03-27T21:57:45.802Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v20.8.4 Daemon Server] - 2026-03-27T21:57:45.803Z - [REQUEST]: 
+[NX v20.8.4 Daemon Server] - 2026-03-27T21:57:45.803Z - [REQUEST]: 
+[NX v20.8.4 Daemon Server] - 2026-03-27T21:57:45.809Z - Time taken for 'loadDefaultNxPlugins' 447.08029999999997ms
+[NX v20.8.4 Daemon Server] - 2026-03-27T21:57:45.854Z - Time taken for 'build-project-configs' 29.288300000000163ms
+[NX v20.8.4 Daemon Server] - 2026-03-27T21:57:45.961Z - [SYNC]: collect registered sync generators
+[NX v20.8.4 Daemon Server] - 2026-03-27T21:57:45.962Z - [REQUEST]: Responding to the client. project-graph
+[NX v20.8.4 Daemon Server] - 2026-03-27T21:57:45.963Z - Time taken for 'total for creating and serializing project graph' 610.4692ms
+[NX v20.8.4 Daemon Server] - 2026-03-27T21:57:45.964Z - Done responding to the client project-graph
+[NX v20.8.4 Daemon Server] - 2026-03-27T21:57:45.964Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 610. Response time: 2.
+[NX v20.8.4 Daemon Server] - 2026-03-27T21:57:45.976Z - [REQUEST]: Responding to the client. handleRunPreTasksExecution
+[NX v20.8.4 Daemon Server] - 2026-03-27T21:57:45.977Z - Time taken for 'preTasksExecution' 0.8447999999998501ms
+[NX v20.8.4 Daemon Server] - 2026-03-27T21:57:45.977Z - Done responding to the client handleRunPreTasksExecution
+[NX v20.8.4 Daemon Server] - 2026-03-27T21:57:45.977Z - Handled PRE_TASKS_EXECUTION. Handling time: 1. Response time: 1.
+[NX v20.8.4 Daemon Server] - 2026-03-27T21:57:46.547Z - [REQUEST]: Responding to the client. handleHashTasks
+[NX v20.8.4 Daemon Server] - 2026-03-27T21:57:46.548Z - Done responding to the client handleHashTasks
+[NX v20.8.4 Daemon Server] - 2026-03-27T21:57:46.548Z - Handled HASH_TASKS. Handling time: 42. Response time: 1.
+[NX v20.8.4 Daemon Server] - 2026-03-27T21:57:47.332Z - [REQUEST]: Responding to the client. handleGetEstimatedTaskTimings
+[NX v20.8.4 Daemon Server] - 2026-03-27T21:57:47.333Z - Done responding to the client handleGetEstimatedTaskTimings
+[NX v20.8.4 Daemon Server] - 2026-03-27T21:57:47.333Z - Handled GET_ESTIMATED_TASK_TIMINGS. Handling time: 23. Response time: 1.
+[NX v20.8.4 Daemon Server] - 2026-03-27T22:06:08.411Z - Closed a connection. Number of open connections: 0

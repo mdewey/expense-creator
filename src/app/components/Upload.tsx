@@ -1,6 +1,6 @@
 import Papa from 'papaparse';
 import { useDispatch } from 'react-redux'
-import { addData, addHeaderOptions } from '../slices/data.slice'
+import { addData, clearData, addHeaderOptions } from '../slices/data.slice'
 import DataSelector from './DataSelector';
 
 function Upload() {
@@ -30,6 +30,9 @@ function Upload() {
       </div>
       <div>
         <DataSelector />
+      </div>
+      <div>
+        <button onClick={() => dispatch(clearData())}>Clear All</button>
       </div>
     </>
   );

@@ -4,6 +4,7 @@
   "pathMappings": {},
   "nxJsonPlugins": [],
   "fileMap": {
+    "nonProjectFiles": [],
     "projectFileMap": {
       "e2e": [
         {
@@ -16,7 +17,7 @@
         },
         {
           "file": "e2e/project.json",
-          "hash": "16810257249756054987"
+          "hash": "9577261543789008085"
         },
         {
           "file": "e2e/src/e2e/app.cy.ts",
@@ -74,15 +75,58 @@
         },
         {
           "file": "nx.json",
-          "hash": "7033079104170698580"
+          "hash": "12643492822545753614"
+        },
+        {
+          "file": "package-lock.json",
+          "hash": "2659075911480150643"
         },
         {
           "file": "package.json",
-          "hash": "4798451776758142702"
+          "hash": "3886421186372599184",
+          "deps": [
+            "npm:@nx/cypress",
+            "npm:@nx/eslint",
+            "npm:@nx/eslint-plugin",
+            "npm:@nx/react",
+            "npm:@nx/vite",
+            "npm:@nx/workspace",
+            "npm:@testing-library/react",
+            "npm:@types/node",
+            "npm:@types/react",
+            "npm:@types/react-dom",
+            "npm:@typescript-eslint/eslint-plugin",
+            "npm:@typescript-eslint/parser",
+            "npm:@vitejs/plugin-react",
+            "npm:@vitest/coverage-v8",
+            "npm:@vitest/ui",
+            "npm:cypress",
+            "npm:eslint",
+            "npm:eslint-config-prettier",
+            "npm:eslint-plugin-cypress",
+            "npm:eslint-plugin-import",
+            "npm:eslint-plugin-jsx-a11y",
+            "npm:eslint-plugin-react",
+            "npm:eslint-plugin-react-hooks",
+            "npm:jsdom",
+            "npm:nx",
+            "npm:prettier",
+            "npm:sass",
+            "npm:typescript",
+            "npm:vite",
+            "npm:vite-tsconfig-paths",
+            "npm:vitest",
+            "npm:@reduxjs/toolkit",
+            "npm:date-fns",
+            "npm:papaparse",
+            "npm:react",
+            "npm:react-dom",
+            "npm:react-redux"
+          ]
         },
         {
           "file": "project.json",
-          "hash": "4048040340506687814"
+          "hash": "8013234303558146902"
         },
         {
           "file": "public/favicon.ico",
@@ -122,7 +166,11 @@
         },
         {
           "file": "src/app/components/Upload.tsx",
-          "hash": "14338402632744278268"
+          "hash": "8377501747518165473",
+          "deps": [
+            "npm:papaparse",
+            "npm:react-redux"
+          ]
         },
         {
           "file": "src/app/nx-welcome.tsx",
@@ -130,7 +178,10 @@
         },
         {
           "file": "src/app/slices/data.slice.ts",
-          "hash": "5833678751557946006"
+          "hash": "3805253095017288375",
+          "deps": [
+            "npm:@reduxjs/toolkit"
+          ]
         },
         {
           "file": "src/app/store.ts",
@@ -165,7 +216,6 @@
           "hash": "18272825559145644750"
         }
       ]
-    },
-    "nonProjectFiles": []
+    }
   }
 }
