@@ -6,7 +6,9 @@
   "targets": {
     "build": {
       "executor": "@nx/vite:build",
-      "outputs": ["{options.outputPath}"],
+      "outputs": [
+        "{options.outputPath}"
+      ],
       "defaultConfiguration": "production",
       "options": {
         "outputPath": "dist/expense-creator"
@@ -39,7 +41,9 @@
     },
     "test": {
       "executor": "@nx/vite:test",
-      "outputs": ["coverage/expense-creator"],
+      "outputs": [
+        "coverage/expense-creator"
+      ],
       "options": {
         "passWithNoTests": true,
         "reportsDirectory": "coverage/expense-creator"
@@ -47,9 +51,13 @@
     },
     "lint": {
       "executor": "@nx/eslint:lint",
-      "outputs": ["{options.outputFile}"],
+      "outputs": [
+        "{options.outputFile}"
+      ],
       "options": {
-        "lintFilePatterns": ["./src/**/*.{ts,tsx,js,jsx}"]
+        "lintFilePatterns": [
+          "./src/**/*.{ts,tsx,js,jsx}"
+        ]
       }
     }
   },
