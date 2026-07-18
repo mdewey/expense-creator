@@ -3731,6 +3731,15 @@
         "hash": "sha512-F0R/h2+dsy5wJAUe3tAU6oqa2qbWY5TpNfL/RGmo1y38hiyO1w3x2jPtt76wmuaJI4DQnOBu21cNXQ2STIUUWg=="
       }
     },
+    "npm:@types/papaparse": {
+      "type": "npm",
+      "name": "npm:@types/papaparse",
+      "data": {
+        "version": "5.5.2",
+        "packageName": "@types/papaparse",
+        "hash": "sha512-gFnFp/JMzLHCwRf7tQHrNnfhN4eYBVYYI897CGX4MY1tzY9l2aLkVyx2IlKZ/SAqDbB3I1AOZW5gTMGGsqWliA=="
+      }
+    },
     "npm:@types/parse-json": {
       "type": "npm",
       "name": "npm:@types/parse-json",
@@ -10677,6 +10686,11 @@
       },
       {
         "source": "expense-creator",
+        "target": "npm:@types/papaparse",
+        "type": "static"
+      },
+      {
+        "source": "expense-creator",
         "target": "npm:@types/react",
         "type": "static"
       },
@@ -15631,6 +15645,13 @@
       {
         "source": "npm:@types/node",
         "target": "npm:undici-types",
+        "type": "static"
+      }
+    ],
+    "npm:@types/papaparse": [
+      {
+        "source": "npm:@types/papaparse",
+        "target": "npm:@types/node",
         "type": "static"
       }
     ],
@@ -24412,5 +24433,5 @@
   },
   "version": "6.0",
   "errors": [],
-  "computedAt": 1774649185076
+  "computedAt": 1784386760059
 }

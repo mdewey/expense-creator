@@ -6,44 +6,6 @@
   "fileMap": {
     "nonProjectFiles": [],
     "projectFileMap": {
-      "e2e": [
-        {
-          "file": "e2e/.eslintrc.json",
-          "hash": "3390671450681897564"
-        },
-        {
-          "file": "e2e/cypress.config.ts",
-          "hash": "3631011454240625899"
-        },
-        {
-          "file": "e2e/project.json",
-          "hash": "9577261543789008085"
-        },
-        {
-          "file": "e2e/src/e2e/app.cy.ts",
-          "hash": "14144182143198129706"
-        },
-        {
-          "file": "e2e/src/fixtures/example.json",
-          "hash": "11614668686582597233"
-        },
-        {
-          "file": "e2e/src/support/app.po.ts",
-          "hash": "11157016311132186162"
-        },
-        {
-          "file": "e2e/src/support/commands.ts",
-          "hash": "7314691991044890572"
-        },
-        {
-          "file": "e2e/src/support/e2e.ts",
-          "hash": "3666078656922506009"
-        },
-        {
-          "file": "e2e/tsconfig.json",
-          "hash": "11974834951735253613"
-        }
-      ],
       "expense-creator": [
         {
           "file": ".eslintrc.json",
@@ -51,7 +13,11 @@
         },
         {
           "file": ".gitignore",
-          "hash": "11608181557323256120"
+          "hash": "2239085614044363935"
+        },
+        {
+          "file": ".node-version",
+          "hash": "541564060168964990"
         },
         {
           "file": ".prettierignore",
@@ -75,15 +41,15 @@
         },
         {
           "file": "nx.json",
-          "hash": "12643492822545753614"
+          "hash": "1101802679841956567"
         },
         {
           "file": "package-lock.json",
-          "hash": "2659075911480150643"
+          "hash": "2045713873577141510"
         },
         {
           "file": "package.json",
-          "hash": "3886421186372599184",
+          "hash": "7065572164732175302",
           "deps": [
             "npm:@nx/cypress",
             "npm:@nx/eslint",
@@ -93,6 +59,7 @@
             "npm:@nx/workspace",
             "npm:@testing-library/react",
             "npm:@types/node",
+            "npm:@types/papaparse",
             "npm:@types/react",
             "npm:@types/react-dom",
             "npm:@typescript-eslint/eslint-plugin",
@@ -153,6 +120,14 @@
           "hash": "5211906573672858066"
         },
         {
+          "file": "src/app/components/FileList.tsx",
+          "hash": "13769792218597899376",
+          "deps": [
+            "npm:react",
+            "npm:react-redux"
+          ]
+        },
+        {
           "file": "src/app/components/ItemType.tsx",
           "hash": "8711073765467002713"
         },
@@ -166,7 +141,7 @@
         },
         {
           "file": "src/app/components/Upload.tsx",
-          "hash": "8377501747518165473",
+          "hash": "6182197030337481227",
           "deps": [
             "npm:papaparse",
             "npm:react-redux"
@@ -178,7 +153,7 @@
         },
         {
           "file": "src/app/slices/data.slice.ts",
-          "hash": "3805253095017288375",
+          "hash": "15740008680812701956",
           "deps": [
             "npm:@reduxjs/toolkit"
           ]
@@ -214,6 +189,44 @@
         {
           "file": "vite.config.ts",
           "hash": "18272825559145644750"
+        }
+      ],
+      "e2e": [
+        {
+          "file": "e2e/.eslintrc.json",
+          "hash": "3390671450681897564"
+        },
+        {
+          "file": "e2e/cypress.config.ts",
+          "hash": "3631011454240625899"
+        },
+        {
+          "file": "e2e/project.json",
+          "hash": "9577261543789008085"
+        },
+        {
+          "file": "e2e/src/e2e/app.cy.ts",
+          "hash": "14144182143198129706"
+        },
+        {
+          "file": "e2e/src/fixtures/example.json",
+          "hash": "11614668686582597233"
+        },
+        {
+          "file": "e2e/src/support/app.po.ts",
+          "hash": "11157016311132186162"
+        },
+        {
+          "file": "e2e/src/support/commands.ts",
+          "hash": "7314691991044890572"
+        },
+        {
+          "file": "e2e/src/support/e2e.ts",
+          "hash": "3666078656922506009"
+        },
+        {
+          "file": "e2e/tsconfig.json",
+          "hash": "11974834951735253613"
         }
       ]
     }
